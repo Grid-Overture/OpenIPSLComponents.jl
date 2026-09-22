@@ -1,0 +1,21 @@
+name = "OpenIPSLComponents"
+uuid = "efae0257-b65a-48c1-939a-c1e4e5219950"
+version = "1.2.0"
+authors = ["GridOverture <mas@gridoverture.ai>"]
+
+[deps]
+ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
+
+[compat]
+julia = "1.13"
+ModelingToolkit = "11.43.0"
+OrdinaryDiffEq = "7.8.1"
+
+[extras]
+DelayDiffEq = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
+NonlinearSolve = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "NonlinearSolve", "DelayDiffEq"]
