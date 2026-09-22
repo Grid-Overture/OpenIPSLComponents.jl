@@ -27,6 +27,19 @@ named by its Modelica leaf name (`GENROU`, `PwLine`). The few leaf-name
 collisions carry a package prefix (`PSSE_TwoWindingTransformer`). Partial
 classes are constructors too, extended with `@unpack` + `extend`.
 
+## A runnable example
+
+```powershell
+cd examples
+julia --project=. -e "using Pkg; Pkg.instantiate()"
+julia --project=. example_3.jl          # writes example_3.png
+```
+
+The 9-bus tutorial system, 20 s, with a three-phase fault at bus 9 between
+t = 3.0 s and t = 3.1 s: rotor angles relative to gen1, and the bus voltages
+through the fault. `examples/` has its own environment on purpose, so plotting
+never becomes a dependency of the library.
+
 ## Tests
 
 ```julia

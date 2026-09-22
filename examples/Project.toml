@@ -1,0 +1,7 @@
+# The examples have their own environment on purpose: plotting is not a
+# dependency of the library, only of the scripts that draw its results.
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
+OpenIPSLComponents = "efae0257-b65a-48c1-939a-c1e4e5219950"
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"

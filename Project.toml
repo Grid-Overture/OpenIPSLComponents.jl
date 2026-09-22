@@ -1,6 +1,6 @@
 name = "OpenIPSLComponents"
 uuid = "efae0257-b65a-48c1-939a-c1e4e5219950"
-version = "1.2.0"
+version = "1.2.1"
 authors = ["GridOverture <mas@gridoverture.ai>"]
 
 [deps]
@@ -9,7 +9,8 @@ OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
 
 [compat]
 julia = "1.13"
-ModelingToolkit = "11.43.0"
+ModelingToolkit = "~11.43"       # 11.45 breaks the PSAT induction-motor Tests; revalidate before widening
+NonlinearSolve = "~4.30"         # test-only: 4.32 breaks InductiveMotorV initialization
 OrdinaryDiffEq = "7.8.1"
 
 [extras]
